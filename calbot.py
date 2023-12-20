@@ -22,8 +22,13 @@ def get_answer_for_question(question: str, knowledge_base: dict) -> str | None:
             return random.choice(responses) if responses else None
 
 def calbot():
-    user_name = input('CalBot: Kumusta! Ako si CalBot. Ano ang iyong pangalan?\n\nYou: ')
-    print(f'\nCalBot: Magandang Araw, {user_name}! Ano ang iyong katanungan?\n')
+    user_name = input('''CalBot: Kumusta! Ako si CalBot. Isang Chatbot na handang tumulong sa pagkilatis ng iyong tatahaking kurso sa kolehiyo.
+                      Ang iyong mga katanungan ay aking sasagutin hinggil sa kursong iyong gustong lakarin. 
+                      
+                      Bago ang lahat, Ano ang iyong ngalan?\n\nYou: ''')
+    print(f'''\nCalBot: Magandang Araw, {user_name.lower()}! Kinagagalak kitang makilala! 
+
+                Maaari ka nang magtanong sa mga bagay na gustong mong malaman. Ano ba ang iyong katanungan?\n''')
 
     knowledge_base: dict = load_knowledge_base('knowledge_base.json')
 
