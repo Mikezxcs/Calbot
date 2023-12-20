@@ -40,6 +40,18 @@
       "responses": [
         "Wow! Magiging doctor ka na"
       ]
+    },
+    {
+      "user": "tao ka ba?",
+      "responses": [
+        "hinde"
+      ]
+    },
+    {
+      "user": "ay ok",
+      "responses": [
+        "sige "
+      ]
     }
   ]
 }
