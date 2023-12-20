@@ -2,6 +2,7 @@ import json
 import random
 from difflib import get_close_matches
 
+#pullreqnadis
 #nagtry lang ako maggithub AHAHAH
 #nagtatry kung gagana 
 def load_knowledge_base(file_path: str) -> dict:
