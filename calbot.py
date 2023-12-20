@@ -2,6 +2,8 @@ import json
 import random
 from difflib import get_close_matches
 
+#nagtry lang ako maggithub AHAHAH
+#nagtatry kung gagana 
 def load_knowledge_base(file_path: str) -> dict:
     with open(file_path, 'r') as file:
         data: dict = json.load(file)
