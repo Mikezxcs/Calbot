@@ -26,9 +26,9 @@ def calbot():
                       Ang iyong mga katanungan ay aking sasagutin hinggil sa kursong iyong gustong lakarin. 
                       
                       Bago ang lahat, Ano ang iyong ngalan?\n\nYou: ''')
-    print(f'''\nCalBot: Magandang Araw, {user_name.lower()}! Kinagagalak kitang makilala! 
+    print(f'''\nCalBot: Magandang Araw, {user_name.lower()}! 
 
-                Maaari ka nang magtanong sa mga bagay na gustong mong malaman. Ano ba ang iyong katanungan?\n''')
+               Bago ang lahat, maaari mong sabihin kung ano ang iyong kinahihiligang asignatura sa paaralan.\n''')
 
     knowledge_base: dict = load_knowledge_base('knowledge_base.json')
 
