@@ -7,6 +7,11 @@ def load_knowledge_base(file_path: str) -> dict:
         data: dict = json.load(file)
     return data
 
+def load_secondary_level(file_path: str) -> dict:
+    with open(file_path, 'r') as file:
+        data: dict = json.load(file)
+    return data
+
 def save_knowledge_base(file_path: str, data: dict):
     with open(file_path, 'w') as file:
         json.dump(data, file, indent=2)
@@ -23,14 +28,15 @@ def get_answer_for_question(question: str, knowledge_base: dict) -> str | None:
 
 def calbot():
     user_name = input('''CalBot: Kumusta! Ako si CalBot. Isang Chatbot na handang tumulong sa pagkilatis ng iyong tatahaking kurso sa kolehiyo.
-                      Ang iyong mga katanungan ay aking sasagutin hinggil sa kursong iyong gustong lakarin. 
-                      
-                      Bago ang lahat, Ano ang iyong ngalan?\n\nYou: ''')
-    print(f'''\nCalBot: Magandang Araw, {user_name.lower()}! 
-
-               Bago ang lahat, maaari mong sabihin kung ano ang iyong kinahihiligang asignatura sa paaralan.\n''')
+                      \nAng iyong mga katanungan ay aking sasagutin hinggil sa kursong iyong gustong lakarin. 
+                      \nBago ang lahat, Ano ang iyong ngalan?\n\nYou: ''')
+    print(f'''\nCalBot: Magandang Araw, {user_name.lower()}! Sa ngayon, anong  ang iyong antas(grade) sa pinapasukan mong paaralan?\n''')
 
     knowledge_base: dict = load_knowledge_base('knowledge_base.json')
+    secondary_level: dict = load_secondary_level('secondary_level.json')
+
+    # Start with knowledge_base.json
+    current_dictionary = knowledge_base  
 
     while True:
         user_input: str = input(f'{user_name}: ').lower()
@@ -43,18 +49,28 @@ def calbot():
             else:
                 continue
 
-        best_match: str | None = find_best_match(user_input, [q["user"] for q in knowledge_base["conversation"]])
+        # Check if the user wants to switch to the secondary level
+        if user_input and any(str(i) in user_input for i in range(7, 11)):
+            current_dictionary = secondary_level
+            print(f'''\nCalBot: Ikaw pala ay isang studyante mula sa ika-{user_input.lower()} na baitang.\n
+        Sa panahon ng pagiging studyante ng sekondaraya ay dito na tayo magkakaroon ng kaisipan kung ano ba ang nais nating maging kurso pagdating ng kolehiyo na may koneksyon sa ating trabahong tatahakin.\n
+        Sa buong taon ng iyong pag-aaral, anong asignatura ang iyong kinahihiligan?
+        ''')
+            continue
+
+        best_match: str | None = find_best_match(user_input, [q["user"] for q in current_dictionary["conversation"]])
 
         if best_match:
-            answer: str = get_answer_for_question(best_match, knowledge_base)
+            answer: str = get_answer_for_question(best_match, current_dictionary)
             print(f'\nCalBot: {answer}\n')
         else:
             print('\nCalBot: Hindi ko alam ang iyong sinabi o itinanong. Maaari mo ba itong ituro sa akin?\n')
             new_answer: str = input('I-tayp ang sagot o ligtangan na lang: ')
 
             if new_answer.lower() != 'skip':
-                knowledge_base["conversation"].append({"user": user_input, "responses": [new_answer]})
+                current_dictionary["conversation"].append({"user": user_input, "responses": [new_answer]})
                 save_knowledge_base('knowledge_base.json', knowledge_base)
+                save_knowledge_base('secondary_level.json', secondary_level)
                 print('\nCalBot: Salamat! May bago akong natutunan!\n')
 
 if __name__ == '__main__':
