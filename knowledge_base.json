@@ -78,30 +78,6 @@
       ]
     },
     {
-      "user": "matematika",
-      "responses": [
-        "Mukhang magaling ka sa pagkokompyut! Naol. Bakit ito ang iyong nakahiligan?"
-      ]
-    },
-    {
-      "user": "dahil simula bata, mahilig na ako sa mga numero.",
-      "responses": [
-        "Mahusay!"
-      ]
-    },
-    {
-      "user": "agham",
-      "responses": [
-        "Nakikita ko na mahilig kang alamin ang misteryo ng mundo at buhay. Bakit ito ang iyong napili?"
-      ]
-    },
-    {
-      "user": "kasi mahilig ako manood ng doctor series",
-      "responses": [
-        "Wow! Magiging doctor ka na"
-      ]
-    },
-    {
       "user": "Filipino",
       "responses": [
         "Pagbasa, Pagsulat, Wika, at Panitikan."
@@ -156,44 +132,10 @@
       ]
     },
     {
-      "user": "sasagutin mo ba talaga?",
-      "responses": [
-        "Oo naman!",
-        "Oo",
-        "Sasagutin ko",
-        "Tumutupad ako sa usapan",
-        "Hindi ako Scammer"
-      ]
-    },
-    {
       "user": "Paano pumili ng kurso sa kolehiyo?",
       "responses": [
         "Una, alamin mo ang pasyon at interes mo sa iyong buhay. Anong paborito mong asignatura?",
         "Una, kinakailangan na dapat alam mo kung ano ang mga gusto mo sa buhay. Anong paborito mong asignatura?"
-      ]
-    },
-    {
-      "user": "matematika",
-      "responses": [
-        "Mukhang magaling ka sa pagkokompyut! Naol. Bakit ito ang iyong nakahiligan?"
-      ]
-    },
-    {
-      "user": "dahil simula bata, mahilig na ako sa mga numero.",
-      "responses": [
-        "Mahusay!"
-      ]
-    },
-    {
-      "user": "agham",
-      "responses": [
-        "Nakikita ko na mahilig kang alamin ang misteryo ng mundo at buhay. Bakit ito ang iyong napili?"
-      ]
-    },
-    {
-      "user": "kasi mahilig ako manood ng doctor series",
-      "responses": [
-        "Wow! Magiging doctor ka na"
       ]
     }
   ]
