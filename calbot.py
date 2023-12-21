@@ -30,7 +30,7 @@ def calbot():
     user_name = input('''CalBot: Kumusta! Ako si CalBot. Isang Chatbot na handang tumulong sa pagkilatis ng iyong tatahaking kurso sa kolehiyo.
                       \nAng iyong mga katanungan ay aking sasagutin hinggil sa kursong iyong gustong lakarin. 
                       \nBago ang lahat, Ano ang iyong ngalan?\n\nYou: ''')
-    print(f'''\nCalBot: Magandang Araw, {user_name.lower()}! Sa ngayon, anong  ang iyong antas(grade) sa pinapasukan mong paaralan?\n''')
+    print(f'''\nCalBot: Magandang Araw, {user_name.lower()}! Sa ngayon, ano ang iyong antas(grade) sa pinapasukan mong paaralan?\n''')
 
     knowledge_base: dict = load_knowledge_base('knowledge_base.json')
     secondary_level: dict = load_secondary_level('secondary_level.json')
