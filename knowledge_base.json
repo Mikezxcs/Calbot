@@ -1,12 +1,6 @@
 {
   "conversation": [
     {
-      "user": "Grade 7, 8, 9, 10",
-      "responses": [
-        "AHAHAHHAHA"
-      ]
-    },
-    {
       "user": "Filipino",
       "responses": [
         "Pagbasa (Reading), Pagsulat (Writing), Wika (Language), at Panitikan (Literature)."
@@ -75,125 +69,6 @@
       "responses": [
         "Una, alamin mo ang pasyon at interes mo sa iyong buhay. Anong paborito mong asignatura?",
         "Una, kinakailangan na dapat alam mo kung ano ang mga gusto mo sa buhay. Anong paborito mong asignatura?"
-      ]
-    },
-    {
-      "user": "matematika",
-      "responses": [
-        "Mukhang magaling ka sa pagkokompyut! Naol. Bakit ito ang iyong nakahiligan?"
-      ]
-    },
-    {
-      "user": "dahil simula bata, mahilig na ako sa mga numero.",
-      "responses": [
-        "Mahusay!"
-      ]
-    },
-    {
-      "user": "agham",
-      "responses": [
-        "Nakikita ko na mahilig kang alamin ang misteryo ng mundo at buhay. Bakit ito ang iyong napili?"
-      ]
-    },
-    {
-      "user": "kasi mahilig ako manood ng doctor series",
-      "responses": [
-        "Wow! Magiging doctor ka na"
-      ]
-    },
-    {
-      "user": "Filipino",
-      "responses": [
-        "Pagbasa, Pagsulat, Wika, at Panitikan."
-      ]
-    },
-    {
-      "user": "Matematika",
-      "responses": [
-        "Alhebra, Trigonometriya, Heometriya, at Estadistika."
-      ]
-    },
-    {
-      "user": "Agham",
-      "responses": [
-        "Biyolohiya, Kimika, Fisika, Agham sa Kalikasan, at iba pang espesyalisadong asignatura."
-      ]
-    },
-    {
-      "user": "Araling Panlipunan",
-      "responses": [
-        "Kasaysayan, Ekonomiks, Sibika, at Kultura ng Pilipinas, pati na ang Aspektong Panglipunan."
-      ]
-    },
-    {
-      "user": "Ingles",
-      "responses": [
-        "World Literature, Communication Arts, Creative Writing."
-      ]
-    },
-    {
-      "user": "Edukasyon sa Pagpapakatao (EsP)",
-      "responses": [
-        "Pagpapahalaga at Moral na Pag-unlad."
-      ]
-    },
-    {
-      "user": "Technology and Livelihood Education (TLE)",
-      "responses": [
-        "Computer Education, Pagtatanim, Paggamit ng Kagamitan, at iba pang kasanayan."
-      ]
-    },
-    {
-      "user": "Edukasyong Pangkatawan at Kalusugan (P.E)",
-      "responses": [
-        "P.E. at Edukasyong Pangkalusugan."
-      ]
-    },
-    {
-      "user": "Musika at Sining",
-      "responses": [
-        "Musika, Sining, at iba pang kasanayan sa sining."
-      ]
-    },
-    {
-      "user": "sasagutin mo ba talaga?",
-      "responses": [
-        "Oo naman!",
-        "Oo",
-        "Sasagutin ko",
-        "Tumutupad ako sa usapan",
-        "Hindi ako Scammer"
-      ]
-    },
-    {
-      "user": "Paano pumili ng kurso sa kolehiyo?",
-      "responses": [
-        "Una, alamin mo ang pasyon at interes mo sa iyong buhay. Anong paborito mong asignatura?",
-        "Una, kinakailangan na dapat alam mo kung ano ang mga gusto mo sa buhay. Anong paborito mong asignatura?"
-      ]
-    },
-    {
-      "user": "matematika",
-      "responses": [
-        "Mukhang magaling ka sa pagkokompyut! Naol. Bakit ito ang iyong nakahiligan?"
-      ]
-    },
-    {
-      "user": "dahil simula bata, mahilig na ako sa mga numero.",
-      "responses": [
-        "Mahusay!"
-      ]
-    },
-    {
-      "user": "agham",
-      "responses": [
-        "Nakikita ko na mahilig kang alamin ang misteryo ng mundo at buhay. Bakit ito ang iyong napili?"
-      ]
-    },
-    {
-      "user": "kasi mahilig ako manood ng doctor series",
-      "responses": [
-        "Wow! Magiging doctor ka na"
       ]
     }
   ]
