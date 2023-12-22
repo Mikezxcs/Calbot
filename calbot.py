@@ -16,6 +16,10 @@ def save_knowledge_base(file_path: str, data: dict):
     with open(file_path, 'w') as file:
         json.dump(data, file, indent=2)
 
+def save_secondary_level(file_path: str, data: dict):
+    with open(file_path, 'w') as file:
+        json.dump(data, file, indent=2)
+
 def find_best_match(user_question: str, conversation: list[str]) -> str | None:
     matches: list = get_close_matches(user_question, conversation, n=1, cutoff=0.6)
     return matches[0] if matches else None
@@ -25,6 +29,13 @@ def get_answer_for_question(question: str, knowledge_base: dict) -> str | None:
         if entry["user"].lower() == question.lower():
             responses = entry.get("responses", [])
             return random.choice(responses) if responses else None
+        
+def get_answer_for_question(question: str, secondary_level: dict) -> str | None:
+    for entry in secondary_level["conversation"]:
+        if entry["user"].lower() == question.lower():
+            responses = entry.get("responses", [])
+            return random.choice(responses) if responses else None
+
 
 def calbot():
     user_name = input('''CalBot: Kumusta! Ako si CalBot. Isang Chatbot na handang tumulong sa pagkilatis ng iyong tatahaking kurso sa kolehiyo.
